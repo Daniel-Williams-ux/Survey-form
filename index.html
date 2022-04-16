@@ -3,40 +3,46 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHA                HRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		 crossorigin="anonymous"/>
 	</head>
 	<body>
 		<div class="container">
 			<header>
 				<div class="row">
 					<div class="col-xs-12">
-						<h1 id="title" class="text-primary text-center"><strong>freeCodeCamp Student Survey Form</strong>
+						<h1 id="title" class="text-primary text-center">
+							<strong>freeCodeCamp Student Survey Form</strong>
 						</h1>
 					</div>
 				</div>
-				 <p id="description" class="description text-center"><strong><em>I appreciate you for your time as you fill this form</em>
-					 <strong>
+				 <p id="description" class="description text-center">
+				  <strong><em>I appreciate you for your time as you fill this form</em>
+				  <strong>
 				 </p>
 			</header>
 			<div class="mt-4 p-5 bg-primary text-white rounded container">
 				<form id="survey-form">
 					 <div class="form-group">
 						 <label id="name-label" class="container" for="name">Name<br>
-						         <input type="text" name="name" id="name" class="form-control"class="form-control" 
+						         <input type="text" name="name" id="name" 
+					                   class="form-control"class="form-control" 
 						           placeholder="Enter your name" required
 						         />
 						 </label><br><br>
 					 </div>
 					 <div class="form-group">
 						 <label id="email-label" class="container" for="name">Email<br>
-							 <input type="email" name="email" id="email" class="form-control" 
+							 <input type="email" name="email" id="email" 
+					                  class="form-control" 
 						          placeholder="Enter your email"required
 		                                         />
 						 </label><br><br>
 					 </div>
 					 <div class="form-group">
 						 <label id="number-label" class="container" for="number">Age(optional)
-							 <input type="number" name="age" id="number"  min="10" max="99" class="form-control"
+							 <input type="number" name="age" id="number"  min="10" max="99"                                                           class="form-control"
 							  placeholder="Age"required
 	                                                 /><br><br>
 						 </label>
@@ -59,87 +65,95 @@
 						 <div class="row">
 							 <div class="col-xs-4">
 								  <label>
-									  <input name="user-recommend" value="veryHelpful"  type="radio"
+									  <input name="user-recommend" 
+		                                                           value="veryHelpful"  type="radio"
 							                   class="input-radio" checked/>Very helpful
 								  </label>
 							 </div>
 							 <div class="col-xs-4">
 								  <label>
-									   <input name="user-recommend" value="QuiteHelpful" type="radio"
+									   <input name="user-recommend" 
+		                                                            value="QuiteHelpful" type="radio"
 							                    class="input-radio" checked/>Quite helpful
 								  </label><br>
 							 </div>
 							 <div class="col-xs-4">
 								 <label>
-									  <input name="user-recommend" value="neutral" type="radio" 
+									  <input name="user-recommend" 
+		                                                           value="neutral" type="radio" 
 							                   class="input-radio" checked/>Neutral
 								 </label>
 							 </div> <br>
 							 <div class="col-xs-4">
 								 <label>
-									 <input name="user-recommend" value="slightlyHelpful" type="radio"
+									 <input name="user-recommend" 
+		                                                          value="slightlyHelpful" type="radio"
 							                  class="input-radio" checked/>Slightly helpful
 								 </label><br>
 							 </div>
 							 <div class="col-xs-4">
 								 <label>
-									 <input name="user-recommend" value="notHelpful" type="radio" 
+									 <input name="user-recommend" 
+		                                                          value="notHelpful" type="radio" 
 							                  class="input-radio" checked/>Not helpful
 								 </label><br><br>
 							 </div>
 						 </div>
-
+					 </div>
 						 <div class="form-group">
-							 <p>
-							 Which of these curriculum needs more elaboration?
-							 </p>
-							 <div class="dropdown">
-								 <select  id="dropdown" name="curriculum" class="form-control">
-									 Select an option
-									 <option disabled selected value>Select an option</option>
-									 <option value="responsiveWebDesign">Responsive Web Design</option>
-									 <option value="javascriptAlgorithmsAndDataStructures">
-									  JavaScript Algorithms and Data Structures</option>
-									 <option value="frontEndDevelopmentlibraries">
-									  Front End Development Libraries</option>
-									 <option value="backEndDevelopmentAndApis">Back End Development and APIs</option>
-								 </select><br><br><br>
-							 </div>
+						 <p>
+					           Which of these curriculum needs more elaboration?
+						 </p>
+						<div class="dropdown">
+						<select  id="dropdown" name="curriculum" class="form-control">
+							Select an option
+							<option disabled selected value>Select an option</option>
+							<option value="responsiveWebDesign">
+							Responsive Web Design</option>
+							<option value="javascriptAlgorithmsAndDataStructures">
+							JavaScript Algorithms and Data Structures</option>
+							<option value="frontEndDevelopmentlibraries">
+							Front End Development Libraries</option>
+							<option value="backEndDevelopmentAndApis">
+							Back End Development and APIs</option>
+						</select><br><br><br>
+					</div>
 
-							 <div>
-								 <p>
-								  Is the freeCodeCamp forum helpful?
-								  <span>(Check one)</span>
-								 </p>
-								 <div class="row">
-									 <div class="col-xs-4">
-										 <label>
-											  <input name="prefer" value="yes" type="checkbox" 
-					                                                   class="input-checkbox"/>Yes
-										 </label><br>
-									 </div>
-								         <div class="col-xs-4">
-										 <label>
-											<input name="prefer" value="no" type="checkbox"
-					                                                 class="input-checkbox"/>No
-										 </label>
-									 </div>
-							 </div><br>
+					<div>
+						<p>
+						Is the freeCodeCamp forum helpful?
+						<span>(Check one)</span>
+						</p>
+						<div class="row">
+						<div class="col-xs-4">
+					        <label>
+							<input name="prefer" value="yes" type="checkbox" 
+					                 class="input-checkbox"/>Yes
+						</label><br>
+						</div>
+						<div class="col-xs-4">
+						<label>
+							<input name="prefer" value="no" type="checkbox"
+					                 class="input-checkbox"/>No
+						</label>
+						</div>
+					</div><br>
 
-							 <div>
-								 <p>
-								  Any comments or suggestions?
-								 </p>
-								 <textarea class="form-control"  id="comments"  name="comment" 
-							                   class="input-textarea" placeholder="enter your comment here...">
-								 </textarea>
-							 </div><br>
+					<div>
+						<p>
+						Any comments or suggestions?
+						</p>
+						<textarea class="form-control"  id="comments"  name="comment" 
+							  class="input-textarea" 
+							  placeholder="enter your comment here...">
+						</textarea>
+					</div><br>
 
-							 <div class="alert alert-primary">
-								 <button type="submit" id="submit" class="btn btn-primary btn-block">
-									 <i class="fa fa-paper-plane"></i>Submit
-								 </button>
-							 </div>
+					<div class="alert alert-primary">
+					<button type="submit" id="submit" class="btn btn-primary btn-block">
+							<i class="fa fa-paper-plane"></i>Submit
+					</button>
+					</div>
 			       </form>
 		</div>
 		<script src="script.js"></script>
